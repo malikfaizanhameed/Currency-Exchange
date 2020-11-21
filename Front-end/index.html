@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+</head>
+
+<body>
+    <h1>Currency Exchange App</h1>
+
+    <p>Enter amount in PKR and select the currency to convert to.</p>
+
+    <form id='form'>
+        <label>Enter amount in PKR: </label>
+        <input id='pkr' type="text" autofocus>
+        <br><br>
+        <label>Select currency to convert!</label>
+        <select id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="AUD">AUD</option>
+            <option value="GBP">GBP</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Convert!">
+    </form>
+
+    <p>Attempting to use API.</p>
+    <p id='answer'></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
